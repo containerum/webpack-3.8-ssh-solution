@@ -8,7 +8,7 @@
     "template": {
       "metadata": {
         "labels": {
-          "app": "solution-webpack-ssh-"
+          "app": "solution-webpack-ssh"
         },
         "name": "solution-webpack-ssh-{{.DEPLOY_HASH}}"
       },
