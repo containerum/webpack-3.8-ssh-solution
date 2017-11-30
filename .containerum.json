@@ -2,7 +2,7 @@
   "env": {
     "IMAGE": "exon/webpack-3.8-ssh-solution",
     "DEPLOY_NAME": "solution-webpack-3.8-ssh",
-    "SVC_NAME": "solution-webpack-ssh-svc",
+    "SVC_NAME": "solution-webpack-ssh",
     "PORT": "22",
     "DATA": "/root",
     "DEPLOY_HASH": "{{rand_string 5}}",
