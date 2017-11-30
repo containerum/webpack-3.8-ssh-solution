@@ -1,0 +1,23 @@
+{
+    "kind": "Service",
+    "metadata": {
+        "labels": {
+            "external": "false",
+            "{{.NS_SELECTOR}}": "{{.DEPLOY_NAME}}-{{.DEPLOY_HASH}}"
+        },
+        "name": "{{.SVC_NAME}}-{{.SVC_HASH}}"
+    },
+    "spec": {
+        "selector": {
+            "{{.NS_SELECTOR}}": "{{.DEPLOY_NAME}}-{{.DEPLOY_HASH}}"
+        },
+        "ports": [
+            {
+                "protocol": "TCP",
+                "targetPort": {{.PORT}},
+                "port": {{.PORT}},
+                "name": "ssh"
+            }
+        ]
+    }
+}

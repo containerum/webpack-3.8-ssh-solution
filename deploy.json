@@ -1,0 +1,65 @@
+{
+  "kind": "Deployment",
+  "metadata": {
+    "name": "{{.DEPLOY_NAME}}-{{.DEPLOY_HASH}}"
+  },
+  "spec": {
+    "replicas": 1,
+    "template": {
+      "metadata": {
+        "labels": {
+          "app": "{{.IMAGE}}"
+        },
+        "name": "{{.DEPLOY_NAME}}-{{.DEPLOY_HASH}}"
+      },
+      "spec": {
+        "containers": [
+          {
+            "env": [
+              {
+                "name": "SSH_KEY",
+                "value": "{{.SSH_KEY}}"
+              },
+              {
+                "name": "USER",
+                "value": "{{.USER}}"
+              },
+              {
+                "name": "ROOT_PASS",
+                "value": "{{.ROOT_PASS}}"
+              },
+              {
+                "name": "USER_PASS",
+                "value": "{{.USER_PASS}}"
+              },
+              {
+                "name": "DATA",
+                "value": "{{.DATA}}"
+              }
+           ],
+            "image": "{{.IMAGE}}",
+            "name": "{{.DEPLOY_NAME}}",
+            "resources": {
+              "requests": {
+                "cpu": "500m",
+                "memory": "500Mi"
+              }
+            },
+            "volumeMounts": [
+              {
+                "mountPath": "{{.PATA}}",
+                "name": "{{.VOLUME}}",
+                "subPath": "{{.DEPLOY_NAME}}-{{.DEPLOY_HASH}}{{.DATA}}"
+              }
+            ]
+          }
+        ],
+        "volumes": [
+          {
+            "name": "{{.VOLUME}}"
+          }
+        ]
+      }
+    }
+  }
+}

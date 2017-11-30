@@ -1,0 +1,25 @@
+{
+  "env": {
+    "IMAGE": "exon/webpack-3.8-ssh-solution",
+    "DEPLOY_NAME": "solution-webpack-3.8-ssh",
+    "SVC_NAME": "solution-webpack-3.8-ssh-svc",
+    "PORT": "22",
+    "DATA": "/root",
+    "DEPLOY_HASH": "{{rand_string 5}}",
+    "SVC_HASH": "{{rand_string 5}}",
+    "ROOT_PASS": "{{rand_string 8}}",
+    "USER_PASS": "{{rand_string 8}}",
+    "SSH_KEY": "",
+    "USER": "ubuntu"
+ },
+ "run":[
+    {
+      "type": "deployment",
+      "config_file": "deploy.json"
+    },
+    {
+      "type": "service",
+      "config_file": "service.json"
+    }
+  ]
+}
