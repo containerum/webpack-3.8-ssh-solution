@@ -14,9 +14,7 @@
         "ports": [
             {
                 "protocol": "TCP",
-                "targetPort": {{.PORT}},
-                "port": {{.PORT}},
-                "name": "ssh"
+                "targetPort": {{.PORT}}
             }
         ]
     }
