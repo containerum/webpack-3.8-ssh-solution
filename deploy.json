@@ -47,7 +47,7 @@
             },
             "volumeMounts": [
               {
-                "mountPath": "{{.PATA}}",
+                "mountPath": "{{.DATA}}",
                 "name": "{{.VOLUME}}",
                 "subPath": "{{.DEPLOY_NAME}}-{{.DEPLOY_HASH}}{{.DATA}}"
               }
