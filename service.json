@@ -3,13 +3,13 @@
     "metadata": {
         "labels": {
             "external": "false",
-            "{{.NS_SELECTOR}}": "{{.DEPLOY_NAME}}-{{.DEPLOY_HASH}}"
+            "{{.NS_SELECTOR}}": "solution-webpack-ssh--{{.DEPLOY_HASH}}"
         },
         "name": "{{.SVC_NAME}}-{{.SVC_HASH}}"
     },
     "spec": {
         "selector": {
-            "{{.NS_SELECTOR}}": "{{.DEPLOY_NAME}}-{{.DEPLOY_HASH}}"
+            "{{.NS_SELECTOR}}": "solution-webpack-ssh--{{.DEPLOY_HASH}}"
         },
         "ports": [
             {
