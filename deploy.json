@@ -1,7 +1,7 @@
 {
   "kind": "Deployment",
   "metadata": {
-    "name": "{{.DEPLOY_NAME}}-{{.DEPLOY_HASH}}"
+    "name": "solution-webpack-ssh-{{.DEPLOY_HASH}}"
   },
   "spec": {
     "replicas": 1,
@@ -38,7 +38,7 @@
               }
            ],
             "image": "{{.IMAGE}}",
-            "name": "{{.DEPLOY_NAME}}",
+            "name": "solution-webpack-ssh",
             "resources": {
               "requests": {
                 "cpu": "500m",
