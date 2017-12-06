@@ -1,16 +1,16 @@
 {
   "kind": "Deployment",
   "metadata": {
-    "name": "solution-webpack-ssh-{{.DEPLOY_HASH}}"
+    "name": "{{.NAME}}-{{.HASH}}"
   },
   "spec": {
     "replicas": 1,
     "template": {
       "metadata": {
         "labels": {
-          "app": "solution-webpack-ssh"
+          "app": "{{.NAME}}-{{.HASH}}"
         },
-        "name": "solution-webpack-ssh-{{.DEPLOY_HASH}}"
+        "name": "{{.NAME}}-{{.HASH}}"
       },
       "spec": {
         "containers": [
@@ -38,18 +38,18 @@
               }
            ],
             "image": "{{.IMAGE}}",
-            "name": "solution-webpack-ssh",
+            "name": "{{.NAME}}",
             "resources": {
               "requests": {
-                "cpu": "500m",
-                "memory": "500Mi"
+                "cpu": "{{.CPU}}",
+                "memory": "{{.RAM}}"
               }
             },
             "volumeMounts": [
               {
                 "mountPath": "{{.DATA}}",
                 "name": "{{.VOLUME}}",
-                "subPath": "{{.DEPLOY_NAME}}-{{.DEPLOY_HASH}}{{.DATA}}"
+                "subPath": "{{.NAME}}-{{.HASH}}{{.DATA}}"
               }
             ]
           }

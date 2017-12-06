@@ -1,16 +1,18 @@
 {
   "env": {
     "IMAGE": "exon/webpack-3.8-ssh-solution",
-    "DEPLOY_NAME": "solution-webpack-3.8-ssh",
+    "NAME": "solution-webpack-3-ssh",
+    "DEPLOY_NAME": "solution-webpack-ssh",
     "SVC_NAME": "solution-webpack-ssh",
     "PORT": "22",
     "DATA": "/root",
-    "DEPLOY_HASH": "{{rand_string 5}}",
-    "SVC_HASH": "{{rand_string 5}}",
+    "HASH": "{{rand_string 5}}",
     "ROOT_PASS": "{{rand_string 8}}",
     "USER_PASS": "{{rand_string 8}}",
     "SSH_KEY": "",
-    "USER": "ubuntu"
+    "USER": "ubuntu",
+    "CPU" : "500m",
+    "RAM": "500Mi"
  },
  "run":[
     {
