@@ -50,6 +50,10 @@
                 "mountPath": "{{.DATA}}",
                 "name": "{{.VOLUME}}",
                 "subPath": "{{.NAME}}-{{.HASH}}{{.DATA}}"
+              },{
+                "mountPath": "/home/{{.USER}}",
+                "name": "{{.VOLUME}}",
+                "subPath": "{{.NAME}}-{{.HASH}}/home/{{.USER}}"
               }
             ]
           }
