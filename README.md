@@ -18,7 +18,7 @@ Or you can use sshfs to mount a remote file system over SSH.
 * Yarn@1.3.2
 
 
-To launch this solution on Containerum.com platform use [Containerum CLI](https://github.com/containerum/chkit) `chkit`.
+To launch this solution on [Containerum.com](https://containerum.com/) sign up on the service, download and use [Containerum CLI](https://github.com/containerum/chkit) `chkit`.
 
 1. Run the Solution with `chkit solution`:
 
