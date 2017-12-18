@@ -1,6 +1,6 @@
 # SSH server with WebPack
 
-This is a solution for front-end developers working with JavaScript. This is basically a self-hosted developer machine synchronized with your local developer environment (e.g. WebStorm or other EDE). Now you don't have to waste your local machine compute power to run WebPack applications.
+This is a solution for front-end developers working with JavaScript. This is basically a self-hosted developer machine synchronized with your local developer environment (e.g. WebStorm or other IDE). Now you don't have to waste your local machine compute power to run WebPack applications.
 
 ## How it works:
 
