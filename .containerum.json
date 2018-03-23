@@ -8,7 +8,7 @@
     "DATA": "/root",
     "HASH": "{{rand_string 5}}",
     "ROOT_PASS": "{{rand_string 8}}",
-    "USER_PASS": "{{rand_string 8}}",
+    "USER_PASS": "12345678",
     "SSH_KEY": "",
     "USER": "ubuntu",
     "CPU" : "500m",
