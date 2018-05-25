@@ -11,8 +11,8 @@
     "USER_PASS": "12345678",
     "SSH_KEY": "",
     "USER": "ubuntu",
-    "CPU" : 500,
-    "RAM": 500
+    "CPU" : "500",
+    "RAM": "500"
  },
  "run":[
     {
