@@ -6,7 +6,7 @@
     "SVC_NAME": "solution-webpack-ssh",
     "PORT": "22",
     "DATA": "/root",
-    "HASH": "{{rand_string 5}}",
+    "HASH": "{{rand_string_minus 5}}",
     "ROOT_PASS": "{{rand_string 8}}",
     "USER_PASS": "12345678",
     "SSH_KEY": "",

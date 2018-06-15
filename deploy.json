@@ -1,7 +1,7 @@
 {
 	"containers": [{
 		"image": "{{.IMAGE}}",
-		"name": "{{.NAME}}-{{.HASH}}",
+		"name": "{{.NAME}}{{.HASH}}",
 		"limits": {
 			"cpu": {{.CPU}},
 			"memory": {{.RAM}}
@@ -28,6 +28,6 @@
 			}
 		]
 	}],
-	"name": "{{.NAME}}-{{.HASH}}",
+	"name": "{{.NAME}}{{.HASH}}",
 	"replicas": 1
 }
