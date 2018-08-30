@@ -119,5 +119,3 @@ $ chkit get svc
 
 
 10. All changes that you make in `src/App.js` are now immediately reflected and can be viewed in your browser at `http://x2.containerum.io:19451`  
-
-![](gif/websln-update.gif)
